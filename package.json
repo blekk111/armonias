@@ -1,0 +1,19 @@
+{
+  "name": "armonias-s",
+  "version": "1.0.0",
+  "description": "-",
+  "main": "armonias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blekk111/armonias.git"
+  },
+  "author": "Juan David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blekk111/armonias/issues"
+  },
+  "homepage": "https://github.com/blekk111/armonias#readme"
+}
