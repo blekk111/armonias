@@ -145,7 +145,7 @@ main {
   margin-top: 10px;
 }
 .title {
-  font-size: 4.5rem; 
+  font-size: 6rem; 
   font-weight: 700;
   color: #e4e4e4;
   line-height: 1.1;
@@ -154,7 +154,7 @@ main {
 }
 
 .slogan {
-  font-size: 1.5rem; 
+  font-size: 2rem; 
   font-weight: 500;
   color: #e4e4e4;
   max-width: 500px; 
