@@ -332,7 +332,7 @@ main {
 .read-more-btn {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #4CAF50;
+    background-color: #28a745; 
     color: white;
     border: none;
     cursor: pointer;
@@ -340,7 +340,7 @@ main {
 }
 
 .read-more-btn:hover {
-    background-color: #45a049;
+  background-color: #28a745; 
 }
 
 .calendar-container {
@@ -517,25 +517,25 @@ main {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #28a745; 
   color: white;
   border: none;
   padding: 10px 20px;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 50px;
   transition: background-color 0.3s;
   font-family: "Montserrat", sans-serif;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #45bd4b;
 }
 
 .card1 {
   border: 5px solid transparent;
-  border-image: linear-gradient(to right, #FF7F50, #FFD700);
+  
   border-image-slice: 1;
   border-radius: 20px;
   background-image: url('img/fondoCard.jpeg');
@@ -545,7 +545,7 @@ button:hover {
 
   .card2 {
     border: 5px solid transparent;
-    border-image: linear-gradient(to right, #32CD32, #00CED1);
+    
     border-image-slice: 1;
     border-radius: 20px;
     background-image: url('img/fondoCard.jpeg');
@@ -558,7 +558,7 @@ button:hover {
     background-size: cover;
     background-position: center;
     opacity: 0.8;
-    background-image: linear-gradient(to bottom, rgba(62, 84, 42, 0.5), rgba(0, 0, 0, 0.675));
+    background-image: linear-gradient(to bottom, rgba(112, 150, 77, 0.5), rgba(0, 0, 0, 0.675));
     position: absolute;
     top: 0;
     left: 0;
@@ -567,11 +567,13 @@ button:hover {
     z-index: -1;
   }
   .card1,.card2 {
-    border: 5px solid #4567b7;
+    border: 5px solid #78af39;
     border-radius: 20px;
     transform: translateY(-20px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+  
+  
 
   .card1 {
     background-color: #f7f7f700;
