@@ -181,11 +181,11 @@ main {
   }
 
   .title {
-    font-size: 2rem; 
+    font-size: 3rem; 
   }
 
   .slogan {
-    font-size: 1.9rem; 
+    font-size: 2.5rem; 
     margin-top: 1rem; 
   }
 }
@@ -200,7 +200,6 @@ main {
   border-radius: 5px;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   #invitacion {
     flex-direction: column;
@@ -210,11 +209,11 @@ main {
 
   .title {
     margin-top: 0.2rem;
-    font-size: 2.5rem; 
+    font-size: 3rem; 
   }
 
   .slogan {
-    font-size: 0.9rem;
+    font-size: 2rem;
     max-width: 100%; 
     margin-top: 15px;
   }
@@ -234,6 +233,26 @@ main {
     font-size: 0.8rem;
   }
 }
+
+
+.event-section {
+  text-align: center; /* Centra el texto de h1 y p */
+  padding: 20px; /* Añade un poco de espacio alrededor de la sección */
+}
+
+.event-title {
+  margin-bottom: 20px; /* Espacio entre el título y la descripción */
+  font-family: "Montserrat", sans-serif;
+}
+
+.event-description {
+  max-width: 600px; /* Limita el ancho máximo del párrafo */
+  margin: 0 auto; /* Centra el párrafo horizontalmente */
+  text-align: center; /* Alinea el texto del párrafo a la izquierda */
+  font-family: 'Mulish';
+}
+
+
 
 /* section2 */
 #colaboracion {
@@ -289,55 +308,110 @@ main {
 /* section2 */
 
 /* section3 */
-.event-section {
+
+/* calendario */
+.calendar-section {
+  margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-container h2 {
+    margin: 10px;
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.read-more-btn:hover {
+    background-color: #45a049;
+}
+
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3); /* Hace el fondo más transparente */
+    color: white;
+    padding: 15px 20px 30px 30px;
+    border-radius: 0 0 15px 15px;
+    text-align: left;
+    backdrop-filter: blur(5px); /* Aplica un filtro borroso */
+}
+.card-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px; /* Altura de la línea */
+  background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff); /* Gradiente de colores */
+  border-radius: 15px 15px 0 0; /* Redondea los bordes superiores para coincidir con el borde del contenedor */
   
-  text-align: center;
-  padding: 80px 20px;
-  background-color: #f8f5f1;  
+}S
+
+.card-content .activity {
+    margin: 0;
+    font-size: 0.9em;
 }
 
-
-
-.event-title {
-  font-family: "Montserrat", sans-serif;
-  color: #333;
-  font-size: 2em;
-  margin-bottom: 20px;
+.card-content h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
 }
 
-
-.event-description {
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: #202020;
-  font-size: 1.2em;
-  margin: 0 auto;
-  line-height: 2;
-  padding: 10px 40px 10px 40px;
-  max-width: 800px; 
+.card-content .date {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ddd;
 }
 
-@media (max-width: 768px) {
-  .event-description {
-    font-size: 1.1em; 
-    padding: 10px 20px; 
-    max-width: 100%; 
-  }
-}
-
-@media (max-width: 480px) {
-  .event-description {
-    font-size: 0.9em; 
-    padding: 5px 10px; 
-  }
-}
-/* section3 */
-
-/* section4 */
-
-/* section4 */
+/* calendario */
 
 /* banner */
 #banner {
