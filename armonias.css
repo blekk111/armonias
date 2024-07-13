@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto:wght@400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&family=Mulish:ital,wght@0,800;1,800&family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 body{
   background-color: #f8f5f1;
   font-family: "Montserrat", sans-serif;
@@ -249,7 +248,9 @@ main {
   max-width: 600px; /* Limita el ancho máximo del párrafo */
   margin: 0 auto; /* Centra el párrafo horizontalmente */
   text-align: center; /* Alinea el texto del párrafo a la izquierda */
-  font-family: 'Mulish';
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
 }
 
 
@@ -314,6 +315,7 @@ main {
   margin-top: 40px;
     text-align: center;
     padding: 20px;
+    
 }
 
 .header-container {
@@ -398,6 +400,9 @@ main {
 .card-content .activity {
     margin: 0;
     font-size: 0.9em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
 }
 
 .card-content h3 {
@@ -475,6 +480,7 @@ main {
 /* Dias */
 
 /* cards */
+
 #cards {
   display: flex;
   justify-content: center;
@@ -488,33 +494,16 @@ main {
 .section {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px; 
-  padding: 20px;
+  padding: 20px 20px 10px 30px;
   width: 45%;
+  justify-content: center;
   text-align: left;
-  position: relative;
-  overflow: hidden;
-  min-height: 300px;
+  min-height: 350px;
   font-family: "Montserrat", sans-serif;
   margin: 100px 30px 30px 30px;
+  overflow: hidden;
 }
 
-.subtitle {
-  font-size: 14px;
-  color: #32CD32;
-  margin: 0;
-}
-
-.section h1 {
-  font-size: 24px;
-  margin: 10px 0;
-  line-height: 1.4;
-}
-
-.description {
-  font-size: 16px;
-  margin: 20px 0;
-  line-height: 1.6;
-}
 
 button {
   background-color: #28a745; 
@@ -522,11 +511,12 @@ button {
   border: none;
   padding: 10px 20px;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 50px;
   transition: background-color 0.3s;
   font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
 }
 
 button:hover {
@@ -535,20 +525,19 @@ button:hover {
 
 .card1 {
   border: 5px solid transparent;
-  
   border-image-slice: 1;
   border-radius: 20px;
-  background-image: url('img/fondoCard.jpeg');
+  background-image: url('img/bosque.jpeg');
   background-size: cover;
   background-position: center;
   }
 
   .card2 {
     border: 5px solid transparent;
-    
+    transition: transform 0.3s;
     border-image-slice: 1;
     border-radius: 20px;
-    background-image: url('img/fondoCard.jpeg');
+    background-image: url('img/hojas.png');
     background-size: cover;
     background-position: center;
   }
@@ -557,36 +546,51 @@ button:hover {
     content: "";
     background-size: cover;
     background-position: center;
-    opacity: 0.8;
-    background-image: linear-gradient(to bottom, rgba(112, 150, 77, 0.5), rgba(0, 0, 0, 0.675));
+    opacity: 1;
+    background-image: linear-gradient(to bottom, rgb(22, 86, 82), rgba(0, 0, 0, 0.298));
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -1;
+    
   }
   .card1,.card2 {
     border: 5px solid #78af39;
     border-radius: 20px;
     transform: translateY(-20px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    
+  }
+
+  .titulo{
+    color: #d6ffe5;
+    font-size: 2.7rem;
+    margin-bottom: 0;
+  }
+  .sub{
+    color: #29f774;
+    font-size: 0.8rem;
+  }
+  .description{
+    color: #d6ffe5;
+    font-size: 0.8rem;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
   }
   
   
 
-  .card1 {
-    background-color: #f7f7f700;
-  }
 
-  .card2 {
-    background-color: #e7e7e700;
-  }
 
   @media (max-width: 768px) {
     #cards {
       flex-direction: column;
-      width: 90%;
+      width: 95%;
     }
 
     .section {
