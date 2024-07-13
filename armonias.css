@@ -235,19 +235,19 @@ main {
 
 
 .event-section {
-  text-align: center; /* Centra el texto de h1 y p */
-  padding: 20px; /* Añade un poco de espacio alrededor de la sección */
+  text-align: center; 
+  padding: 20px; 
 }
 
 .event-title {
-  margin-bottom: 20px; /* Espacio entre el título y la descripción */
+  margin-bottom: 20px; 
   font-family: "Montserrat", sans-serif;
 }
 
 .event-description {
-  max-width: 600px; /* Limita el ancho máximo del párrafo */
-  margin: 0 auto; /* Centra el párrafo horizontalmente */
-  text-align: center; /* Alinea el texto del párrafo a la izquierda */
+  max-width: 600px; 
+  margin: 0 auto; 
+  text-align: center; 
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -477,7 +477,87 @@ main {
 /* --- */
 
 
-/* Dias */
+/* logos */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin: 50px 20px;
+}
+
+.inner-wrapper {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: calc(100% * 2); 
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 12%; 
+  height: 200px; 
+  background-size: cover;
+  background-position: center;
+  margin-right: 30px; 
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+.item1 {
+  background-image: url('img/galeria.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item2 {
+  background-image: url('img/icono.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item3 {
+  background-image: url('img/logoIdartes.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item4 {
+  background-image: url('img/oscurabk.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item5 {
+  background-image: url('img/pontificia-universidad-javeriana-vector-logo.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item6 {
+  background-image: url('img/Danvegamo-Logo-1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* logos */
 
 /* cards */
 
