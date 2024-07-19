@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&family=Mulish:ital,wght@0,800;1,800&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* header */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #081c15;
+}
+header{
+    position: fixed;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1000
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #081c15b2;
+    top: 0;
+    z-index: 1000;
+    
+  }
+  .navbar img {
+    height: 50px;
+  }
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .navbar ul li {
+    margin-left: 20px;
+  }
+  .navbar ul li a {
+    color: rgb(236, 236, 236);
+    text-decoration: none;
+    padding: 8px 16px;
+  }
+  .navbar ul li a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid #83c23c;
+    border-radius: 4px;
+    transition: border-bottom-color 0.3s;
+  }
+  .contact {
+    background-color: #32cd32;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  .contact:hover {
+    background-color: #28a745; 
+    color: #fff; 
+    transition: background-color 0.3s ease-in-out; 
+  }
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: rgb(24, 24, 24);
+    font-size: 24px;
+  }
+  @media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul.showing {
+        display: flex;
+    }
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    .menu-toggle {
+        display: block;
+    }
+  }
+  /* header */
+  /* actividades */
+body{
+    margin: 0%;
+}
+.dive-club-section {
+    background-size: 70% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* Agregamos el gradiente overlay */
+    background-image: 
+         linear-gradient(to right, #081c15 0%, #081c1523 30%),
+         linear-gradient(to top, #081c15 0%, #081c1523 20%),
+            url('/img/fondoActividades.jpg');
+    
+    overflow: hidden;
+}
+
+.text-content {
+    color: white;
+    margin-left: 80px; 
+    max-width: 500px; 
+}
+
+.text-content h1 {
+    font-size: 4em;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+
+.text-content p {
+    font-size: 1.3em;
+    line-height: 1.5;
+    font-family: 'Roboto Mono';
+    font-weight: 500 ;
+}
+
+/* actividades */
+
+/* calendario */
+.calendar-section {
+  margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #28a745;
+    
+}
+
+.header-container h2 {
+    margin: 10px;
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.read-more-btn:hover {
+  background-color: #28a745; 
+}
+
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3); /* Hace el fondo más transparente */
+    color: white;
+    padding: 15px 20px 30px 30px;
+    border-radius: 0 0 15px 15px;
+    text-align: left;
+    backdrop-filter: blur(5px); /* Aplica un filtro borroso */
+}
+.card-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px; /* Altura de la línea */
+  background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff); /* Gradiente de colores */
+  border-radius: 15px 15px 0 0; /* Redondea los bordes superiores para coincidir con el borde del contenedor */
+  
+}S
+
+.card-content .activity {
+    margin: 0;
+    font-size: 0.9em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.card-content h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.card-content .date {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+/* calendario */
+
+
+
+
+
+
+
+  /* otra pagina */
+  .hiking-section {
+    display: flex;
+    align-items: center;
+    background-color: #3c473c95;
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 20px 20px 50px 20px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 30px;
+    
+}
+
+.text-container {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.text-container h2 {
+  font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.text-container h3 {
+  font-family: "Montserrat", sans-serif;
+  
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #32cd32;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+}
+.btn:hover {
+  background-color: #28a745; 
+  color: #fff; 
+  transition: background-color 0.3s ease-in-out; 
+}
+
+
+
+
+
+  /* otra pagina */
+
+  /* footer */
+footer {
+    background-color: #081C15;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+  }
+  
+  .footer-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .footer-content button {
+    background-color: #6eff88;
+    color: #2e3b39;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-content button:hover {
+    background-color: #5fe176;
+  }
+  
+  .footer-border {
+    height: 4px;
+    background: linear-gradient(to right, #32CD32, #FFD700, #FF7F50, #32CD32, #00CED1);
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .footer-content h1, .footer-content button {
+      margin-bottom: 20px; 
+    }
+  }
+  /* footer */

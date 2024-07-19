@@ -245,7 +245,7 @@ main {
 }
 
 .event-description {
-  max-width: 600px; 
+  max-width: 750px; 
   margin: 0 auto; 
   text-align: center; 
   font-family: "Roboto Mono", monospace;
@@ -378,12 +378,12 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.3); /* Hace el fondo más transparente */
+    background: rgba(0, 0, 0, 0.3); 
     color: white;
     padding: 15px 20px 30px 30px;
     border-radius: 0 0 15px 15px;
     text-align: left;
-    backdrop-filter: blur(5px); /* Aplica un filtro borroso */
+    backdrop-filter: blur(5px); 
 }
 .card-content::before {
   content: "";
@@ -391,9 +391,9 @@ main {
   top: 0;
   left: 0;
   right: 0;
-  height: 2px; /* Altura de la línea */
-  background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff); /* Gradiente de colores */
-  border-radius: 15px 15px 0 0; /* Redondea los bordes superiores para coincidir con el borde del contenedor */
+  height: 2px; 
+  background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff); 
+  border-radius: 15px 15px 0 0; 
   
 }S
 
@@ -646,12 +646,13 @@ button:hover {
 
   .titulo{
     color: #d6ffe5;
-    font-size: 2.7rem;
+    font-size: 3.5rem;
     margin-bottom: 0;
   }
   .sub{
     color: #29f774;
     font-size: 0.8rem;
+    margin-bottom: 20px;
   }
   .description{
     color: #d6ffe5;
@@ -661,6 +662,7 @@ button:hover {
     font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
+  
   }
   
   
