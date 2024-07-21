@@ -85,46 +85,106 @@ header{
   }
   /* header */
   /* actividades */
-body{
-    margin: 0%;
-}
-.dive-club-section {
-    background-size: 70% 100%;
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    /* Agregamos el gradiente overlay */
-    background-image: 
-         linear-gradient(to right, #081c15 0%, #081c1523 30%),
-         linear-gradient(to top, #081c15 0%, #081c1523 20%),
-            url('/img/fondoActividades.jpg');
-    
-    overflow: hidden;
-}
-
-.text-content {
-    color: white;
-    margin-left: 80px; 
-    max-width: 500px; 
-}
-
-.text-content h1 {
-    font-size: 4em;
-    margin-bottom: 30px;
-    font-family: 'Montserrat';
-    font-weight: 800;
-}
-
-.text-content p {
-    font-size: 1.3em;
-    line-height: 1.5;
-    font-family: 'Roboto Mono';
-    font-weight: 500 ;
-}
-
-/* actividades */
+  body{
+      margin: 0%;
+  }
+  .dive-club-section {
+      background-size: 70% 100%;
+      background-position: right;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      /* Agregamos el gradiente overlay */
+      background-image: 
+           linear-gradient(to right, #081c15 0%, #081c1523 30%),
+           linear-gradient(to top, #081c15 0%, #081c1523 20%),
+              url('/img/fondoActividades.jpg');
+      
+      overflow: hidden;
+  }
+  
+  .text-content {
+      color: white;
+      margin-left: 80px; 
+      max-width: 500px; 
+  }
+  
+  .text-content h1 {
+      font-size: 4em;
+      margin-bottom: 30px;
+      font-family: 'Montserrat';
+      font-weight: 800;
+  }
+  
+  .text-content p {
+      font-size: 1.3em;
+      line-height: 1.5;
+      font-family: 'Roboto Mono';
+      font-weight: 500 ;
+  }
+  
+  /* Estilos existentes */
+  
+  /* Añade tus estilos existentes aquí */
+  
+  /* Media queries para ajustes responsivos */
+  
+  @media (max-width: 768px) {
+      .container {
+          width: 100%;
+          padding: 10px;
+      }
+  
+      .statement h1 {
+          font-size: 2em;
+          margin-top: 20px;
+      }
+  
+      .statement p {
+          font-size: 1em;
+      }
+  
+      .video-container video {
+          max-width: 100%;
+      }
+  
+      .team h2, .team p {
+          font-size: 1.5em;
+      }
+  
+      .team p {
+          margin-bottom: 20px;
+      }
+  
+      .team-members {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .team-member {
+          width: 90%;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .statement h1 {
+          font-size: 1.5em;
+      }
+  
+      .statement p, .team h2, .team p {
+          font-size: 1em;
+      }
+  
+      .team-member h3 {
+          font-size: 1em;
+      }
+  
+      .team-member p {
+          font-size: 0.9em;
+      }
+  }
+  /* actividades */
 
 /* calendario */
 .calendar-section {
@@ -369,3 +429,122 @@ footer {
     }
   }
   /* footer */
+
+  /* abtus */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.statement {
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(229, 229, 229);
+}
+
+.statement h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+
+.statement p {
+  font-size: 1.2em;
+  margin-bottom: 0px;
+  max-width: 750px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.team {
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: rgb(229, 229, 229);
+}
+
+.team p {
+  font-size: 1.2em;
+  margin-bottom: 40pxpx;
+  max-width: 750px; 
+  margin-left: auto;
+  margin-right: auto;
+    color: rgb(229, 229, 229);
+}
+
+.team-members {
+  margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(240, 237, 237);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-family: 'Montserrat';
+  
+  font-weight: 800;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #242424;
+}
+
+  /* abtus */

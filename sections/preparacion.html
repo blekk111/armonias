@@ -4,117 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividades armonías</title>
-    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="section.css">
     <script src="armonias.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html">
-                <div id="imagenTitulo">
-                    <!-- Your logo code here -->
-                </div>
-            </a>
-            <button class="btn">Únete a nosotros</button>
-        </div>
+    <header>
+        <nav class="navbar">
+      <a href="/index.html">
+          <img  src="/img/armonias_Blanco.png" alt="Logo" >
+      </a>
+        <span class="menu-toggle">☰</span>
+        <ul>
+            <li><a href="/sections/actividades.html">Actividades</a></li>
+            <li><a href="/sections/preparacion.html">Preparacion</a></li>
+            <li><a href="/sections/abtus.html">Sobre nosotros</a></li>
+        </ul>
+        <a class="contact" href="#">Unete a nosotros</a>
+        <script src="armonias.js"></script>
+        </nav>
     </header>
 
-    <main>
-        <div class="dive-club-section">
-            <div class="text-content">
-                <h1>nuestra <br>preparación</h1>
-                <p>                
-                    El equipo de armonias ha estado preparando unas actividades inolvidables, acompañanos a ver nuestro trabajo...
-                </p>
-            </div>
+    <div class="dive-club-section">
+        <div class="text-content">
+            <h1>Visita <br>La prearacion del equipo</h1>
+            <p>
+                equipo armonias...
+            </p>
         </div>
-        
-        <div class="explore-section">
-            <div class="explore-text">
-                <h1>Calendario Julio</h1>
-                <p>fecha # a fecha #</p>
-                <p>
-                    A lo largo del mes de julio el equipo de armonias ha preparado talleres o actividades... (descripcion...)
-                </p>
-                
-            </div>
-            <div class="carousel-container">
-                
-                <div class="cards-container">
-                    <div class="card" style="background-image: url('img/360Pic.webp');">
-                        <div class="card-content">
-                            <h3>Día 1</h3>
-                            <p>primera clase</p>
-                            <a href="preparacion/dia1.html" class="card-button">ver más</a>
-                        </div>
-                    </div>
-                    <div class="card" style="background-image: url('img/cards.webp');">
-                        <div class="card-content">
-                            <h3>Día 2</h3>
-                            <p>segunda clase</p>
-                            <a href="preparacion/dia2.html" class="card-button">ver más</a>
-                        </div>
-                    </div>
-                    <div class="card" style="background-image: url('img/cards.webp');">
-                        <div class="card-content">
-                            <h3>Día 3</h3>
-                            <p>tercera clase</p>
-                            <a href="preparacion/dia3.html" class="card-button">ver más</a>
-                        </div>
-                    </div>
-                    <div class="card" style="background-image: url('img/cards.webp');">
-                        <div class="card-content">
-                            <h3>Día 4</h3>
-                            <p>cuarta clase</p>
-                            <a href="preparacion/dia4.html" class="card-button">ver más</a>
-                        </div>
-                    </div>
-                    <div class="card" style="background-image: url('img/cards.webp');">
-                        <div class="card-content">
-                            <h3>Día 5</h3>
-                            <p>quinta clase</p>
-                            <a href="preparacion/dia5.html" class="card-button">ver más</a>
-                        </div>
-                    </div>
+    </div>
+
+    <div class="calendar-section">
+        <div class="header-container">
+            <h2>Preparacion</h2>
+            <button class="read-more-btn" onclick="location.href='more.html'">Leer más</button>
+        </div>
+        <div class="calendar-container">
+            <div class="card" onclick="location.href='page1.html'">
+                <img src="/img/actividad1.jpeg" alt="INAGURACION">
+                <div class="card-content">
+                    <p class="activity">Actividad 1</p>
+                    <h3>INAGURACION</h3>
+                    <p class="date">03.04.2024</p>
                 </div>
-                
+            </div>
+            <div class="card" onclick="location.href='page2.html'">
+                <img src="/img/actividad2.jpeg" alt="Why mangroves: The case for blue carbon">
+                <div class="card-content">
+                    <p class="activity">Actividad 2</p>
+                    <h3>NOMBRE</h3>
+                    <p class="date">21.03.2024</p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='page3.html'">
+                <img src="/img/actividad3.jpeg" alt="Pachama releases Project Evaluation Criteria 2.3">
+                <div class="card-content">
+                    <p class="activity">Actividad 3</p>
+                    <h3>NOMBRE</h3>
+                    <p class="date">18.03.2024</p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='page4.html'">
+                <img src="/img/actividad4.jpeg" alt="Customer success story: Workday">
+                <div class="card-content">
+                    <p class="activity">Actividad 4</p>
+                    <h3>NOMBRE</h3>
+                    <p class="date">13.03.2024</p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='page4.html'">
+                <img src="/img/actividad5.jpeg" alt="Customer success story: Workday">
+                <div class="card-content">
+                    <p class="activity">Actividad 5</p>
+                    <h3>NOMBRE</h3>
+                    <p class="date">13.03.2024</p>
+                </div>
             </div>
         </div>
-        
-        <div class="invitation-section">
-    <div class="invitation-content">
-        <h1>TRABAJA CON NOSOTROS</h1>
-        <p>Ayuda y disfruta mientras cambias el mundo</p>
-        <button class="invitation-button">Únete a nosotros</button>
     </div>
-</div>
 
 
-
-<div class="hiking-section">
-    <div class="image-container">
-        <img src="img/cards.webp" alt="Hiker on mountain">
+    <div class="hiking-section">
+        <div class="image-container">
+            <img src="/img/cards.webp" alt="Hiker on mountain">
+        </div>
+        <div class="text-container">
+            <h2>ACTIVIDADES</h2>
+            <h3>Visita las actividades que hemos preparado para ti!</h3>
+            <p> (descripion de las actividades)</p>
+            <a href="actividades.html" class="btn">Disfruta con nosotros</a>
+        </div>
     </div>
-    <div class="text-container">
-        <h2>ACTIVIDADES</h2>
-        <h3>Visita las actividades que hemos preparado para ti!</h3>
-        <p> (descripion de las actividades)</p>
-        <a href="actividades.html" class="btn">Disfruta con nosotros</a>
-    </div>
-</div>
+
+
+    <footer>
+        <div class="footer-content">
+            <h1>Reconecta con tu entorno natural</h1>
+            <button>ÚNETE A NOSOTROS</button>
+        </div>
+        <div class="footer-border"></div>
+    </footer>
 
 
 
 
 
 
-        <footer>
-            <div class="footer-content">
-                <h1>Reconectate con tu entorno natural</h1>
-                <button>ÚNETE A NOSOTROS</button>
-            </div>
-            <div class="footer-border"></div>
-        </footer>
-    </main>
+    <script src="armonias.js"></script>
 </body>
 </html>
