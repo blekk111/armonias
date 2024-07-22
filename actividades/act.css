@@ -1,0 +1,265 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1000;
+    top: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 0;
+    z-index: 1000;
+}
+.navbar img {
+    height: 50px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 8px 16px;
+}
+.navbar ul li a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid #83c23c;
+    border-radius: 4px;
+    transition: border-bottom-color 0.3s;
+}
+.contact {
+    background-color: #32cd32;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+}
+.contact:hover {
+    background-color: #28a745; 
+    color: #fff; 
+    transition: background-color 0.3s ease-in-out; 
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: rgb(24, 24, 24);
+    font-size: 24px;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul.showing {
+        display: flex;
+    }
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Content styles */
+.content {
+    max-width: 1200px;
+    margin: 100px auto 15rem; /* Add margin for fixed header and footer */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header {
+    margin-bottom: 20px; /* Space below the header image */
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Set the maximum height for the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 10px 10px 0 0;
+}
+
+.event-container {
+    display: flex;
+    padding: 20px;
+    color: #333;
+    border-top: 1px solid #e5e5e5;
+}
+
+.event-date {
+    background-color: #32a852; /* Verde */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.event-date p {
+    margin: 10px 0;
+}
+
+.event-day, .event-time {
+    font-size: 18px;
+}
+
+.event-number {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.event-month, .event-year {
+    font-size: 24px;
+}
+
+.event-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.event-category {
+    color: #32a852; /* Verde */
+    margin-bottom: 10px;
+}
+
+.event-title {
+    margin: 0;
+    font-size: 28px;
+}
+
+.program-title {
+    margin-top: 0;
+}
+
+.program-detail, .program-description {
+    margin: 5px 0;
+}
+
+.btn-buy-tickets {
+    background-color: #32a852; /* Verde */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn-buy-tickets:hover {
+    background-color: #27843f;
+}
+
+.event-duration {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.duration-title {
+    margin: 0;
+}
+
+.duration-time {
+    margin: 0;
+}
+
+.event-venue {
+    margin-top: 20px;
+}
+
+.venue-title, .venue-detail {
+    margin: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #081C15;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.footer-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-content button {
+    background-color: #6eff88;
+    color: #2e3b39;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.footer-content button:hover {
+    background-color: #5fe176;
+}
+
+.footer-border {
+    height: 4px;
+    background: linear-gradient(to right, #32CD32, #FFD700, #FF7F50, #32CD32, #00CED1);
+    margin-top: 10px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .footer-content h1, .footer-content button {
+        margin-bottom: 20px; 
+    }
+}
