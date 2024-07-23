@@ -517,45 +517,60 @@ body {
 }
 
 .item1 {
-  background-image: url('img/galeria\ \(2\).png');
+  background-image: url('img/idartes1.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item2 {
-  background-image: url('img/icono.webp');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.item3 {
-  background-image: url('img/logoIdartes.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.item4 {
-  background-image: url('img/oscurabk.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.item5 {
   background-image: url('img/pontificia-universidad-javeriana-vector-logo.webp');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.item6 {
-  background-image: url('img/Danvegamo-Logo-1.png');
+.item3 {
+  background-image: url('img/Danvegamo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+
+.item4 {
+  background-image: url('img/galeria\ \(2\).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item5 {
+  background-image: url('img/mamu.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item6 {
+  background-image: url('img/oscurabk.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item7{
+  background-image: url('img/icono.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.item8{
+  background-image: url('img/elparqueadero.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 /* logos */
 
@@ -670,26 +685,42 @@ button:hover {
 
 
   @media (max-width: 768px) {
-    #cards {
-      flex-direction: column;
-      width: 95%;
-    }
-
-    .section {
-      width: 90%;
-      margin: 50px 5% 30px 5%;
-      padding: 15px;
-    }
-
-    .subtitle, .section h1, .description, button {
-      font-size: 90%;
-    }
-
-    .card1, .card2 {
-      margin: 20px auto;
-      transform: translateY(0);
-      width: auto;
-    }
+      #cards {
+          flex-direction: column;
+          width: 90%;
+          justify-content: center;
+          align-items: center;
+      }
+  
+     
+  
+      
+  
+      
+      
+  }
+  
+  @media (max-width: 480px) {
+      #cards {
+        margin-top: 5rem;
+          width: 90%;
+      }
+  
+      .section {
+          width: 90%;
+          margin: 20px 0;
+          padding: 10px;
+      }
+  
+      .subtitle, .section h1, .description, button {
+          font-size: 100%;
+      }
+  
+      .card1, .card2 {
+          margin: 10px ;
+          width: 90%;
+          padding: 1rem;
+      }
   }
 
 
