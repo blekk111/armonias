@@ -212,7 +212,7 @@ footer {
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
     width: 100%;
-    position: fixed;
+    position: relative; /* Cambiado de fixed a relative */
     bottom: 0;
 }
 

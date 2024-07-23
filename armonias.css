@@ -313,107 +313,109 @@ main {
 /* calendario */
 .calendar-section {
   margin-top: 40px;
-    text-align: center;
-    padding: 20px;
-    
+  text-align: center;
+  padding: 20px;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .header-container h2 {
-    margin: 10px;
-    font-size: 2em;
-    font-family: "Montserrat", sans-serif;
+  margin: 10px;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .read-more-btn {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #28a745; 
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
 }
 
 .read-more-btn:hover {
-  background-color: #28a745; 
+  background-color: #28a745;
 }
 
 .calendar-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* agrandar card */
+  gap: 20px;
+  justify-items: center;
 }
 
 .card {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    transition: transform 0.3s;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s;
 }
 
 .card:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3); 
-    color: white;
-    padding: 15px 20px 30px 30px;
-    border-radius: 0 0 15px 15px;
-    text-align: left;
-    backdrop-filter: blur(5px); 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 15px 20px 30px 30px;
+  border-radius: 0 0 15px 15px;
+  text-align: left;
+  backdrop-filter: blur(5px);
 }
+
 .card-content::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 2px; 
-  background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff); 
-  border-radius: 15px 15px 0 0; 
-  
-}S
+  height: 2px;
+  background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff);
+  border-radius: 15px 15px 0 0;
+}
 
 .card-content .activity {
-    margin: 0;
-    font-size: 0.9em;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
+  margin: 0;
+  font-size: 0.9em;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 .card-content h3 {
-    margin: 5px 0;
-    font-size: 1.2em;
+  margin: 5px 0;
+  font-size: 1.3em;
 }
 
 .card-content .date {
-    margin: 0;
-    font-size: 0.9em;
-    color: #ddd;
+  margin: 0;
+  font-size: 0.9em;
+  color: #ddd;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 /* calendario */
@@ -537,9 +539,8 @@ body {
   background-position: center;
 }
 
-
 .item4 {
-  background-image: url('img/galeria\ \(2\).png');
+  background-image: url('img/galeria1.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -558,19 +559,28 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.item7{
+
+.item7 {
   background-image: url('img/icono.webp');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
 }
-.item8{
+
+.item8 {
   background-image: url('img/elparqueadero.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
 
+/* Media query para pantallas de celulares */
+@media (max-width: 480px) {
+  .item {
+    width: 25%; /* Aumentar el ancho de los elementos */
+    height: 250px; /* Aumentar la altura de los elementos */
+    margin-right: 15px; /* Ajustar el margen */
+  }
 }
 /* logos */
 
@@ -635,6 +645,7 @@ button:hover {
     background-image: url('img/hojas.png');
     background-size: cover;
     background-position: center;
+    
   }
 
   .section::before {
