@@ -97,7 +97,7 @@ header{
       height: 100vh;
       display: flex;
       align-items: center;
-      /* Agregamos el gradiente overlay */
+     
       background-image: 
           linear-gradient(to right, #081c15 0%, #081c1523 30%),
           linear-gradient(to top, #081c15 0%, #081c1523 20%),
@@ -484,18 +484,23 @@ footer {
     margin: auto;
     overflow: hidden;
     padding: 20px;
+    padding-top: 40px;
 }
 
 .statement {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
     color: rgb(229, 229, 229);
 }
 
 .statement h1 {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
     margin-top: 45px;
+    font-family: 'Montserrat';
+  font-weight: 800;
 }
 
 .statement p {
@@ -504,6 +509,9 @@ footer {
   max-width: 750px; 
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Roboto Mono';
+
+  font-weight: 100 700;
 }
 
 .video-container {
@@ -528,6 +536,8 @@ footer {
     font-size: 2em;
     margin-bottom: 10px;
     color: rgb(229, 229, 229);
+    font-family: 'Montserrat';
+    font-weight: 800;
 }
 
 .team p {
@@ -537,6 +547,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
     color: rgb(229, 229, 229);
+    font-family: 'Roboto Mono';
+    font-weight: 100 700;
 }
 
 .team-members {
@@ -544,7 +556,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .team-member {
@@ -552,8 +564,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(240, 237, 237);
-    border: 1px solid #ccc;
+    background: rgba(240, 237, 237, 0.452);
+    border: 1px solid #cccccc00;
     border-radius: 10px;
     width: 200px;
     padding: 20px;
@@ -568,12 +580,12 @@ footer {
 }
 
 .team-member img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10%;
-    margin-bottom: 10px;
+  width: 100%; 
+  height: auto; 
+  border-radius: 50%; 
+  margin-bottom: 10px;
+  object-fit: cover; 
 }
-
 .team-member h3 {
   font-family: 'Montserrat';
   
