@@ -244,7 +244,7 @@ header{
 .read-more-btn {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #28a745; 
+    background-color: #32cd32;
     color: white;
     border: none;
     cursor: pointer;
@@ -252,7 +252,7 @@ header{
 }
 
 .read-more-btn:hover {
-  background-color: #28a745; 
+  background-color: #2a9210; 
 }
 
 .calendar-container {
@@ -397,7 +397,7 @@ header{
   font-family: "Montserrat", sans-serif;
 }
 .btn:hover {
-  background-color: #28a745; 
+  background-color: #2a9210; 
   color: #fff; 
   transition: background-color 0.3s ease-in-out; 
 }
@@ -434,7 +434,7 @@ footer {
   }
   
   .footer-content button {
-    background-color: #6eff88;
+    background-color: #32cd32;
     color: #2e3b39;
     border: none;
     padding: 15px 30px;
@@ -446,7 +446,7 @@ footer {
   }
   
   .footer-content button:hover {
-    background-color: #5fe176;
+    background-color: #2a9210; 
   }
   
   .footer-border {
@@ -600,3 +600,60 @@ footer {
 }
 
   /* abtus */
+
+  /* preparacion */
+  .section {
+    display: flex;
+    align-items: center;
+    padding: 20px 10%;
+    color: #fff;
+    margin: 5px 0;
+    border-radius: 0px; /* Bordes redondeados de la sección */
+    
+    position: relative;
+}
+.section img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados de la imagen */
+}
+.section .text {
+    max-width: 50%;
+    padding: 0 20px;
+}
+.section .text h2 {
+    margin: 0 0 10px;
+    font-size: 1.8em;
+}
+.section .text p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+.section {
+    background-color: #4caf50; /* Verde */
+}
+
+.section.reverse {
+    flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .section .text {
+        position: static;
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
+        padding: 20px 10px;
+        border-radius: 8px 8px 0 0;
+    }
+    .section img {
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 0 0 8px 8px; /* Bordes redondeados solo en la parte inferior */
+    }
+}
+  /* preparacion */
