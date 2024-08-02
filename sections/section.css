@@ -631,6 +631,7 @@ footer {
     text-align: left;
     width: 100%; 
     font-family: 'Roboto Mono';
+    -ms-text-justify: auto;
 }
 
 .title {
