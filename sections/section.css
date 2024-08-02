@@ -602,58 +602,112 @@ footer {
   /* abtus */
 
   /* preparacion */
-  .section {
-    display: flex;
-    align-items: center;
-    padding: 20px 10%;
-    color: #fff;
-    margin: 5px 0;
-    border-radius: 0px; /* Bordes redondeados de la sección */
-    
+  
+.proceso {
+    padding: 10px;
     position: relative;
+    color: #d2d2d2;
 }
-.section img {
-    max-width: 40%;
+.content {
+    display: flex;
+    
+    align-items: center;
+    background-color: #222;
+    border-radius: 10px;
+    padding: 30px;
+}
+.content img {
+    width: 100%;
+    max-width: 200px;
     height: auto;
-    border-radius: 8px; /* Bordes redondeados de la imagen */
+    border-radius: 10px;
+    margin-right: 30px;
 }
-.section .text {
-    max-width: 50%;
-    padding: 0 20px;
+.text {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 1000px;
+    font-family: 'Roboto Mono';
+    
 }
-.section .text h2 {
-    margin: 0 0 10px;
-    font-size: 1.8em;
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+
 }
-.section .text p {
-    margin: 0 0 10px;
-    line-height: 1.5;
+.button {
+    margin-top: 20px;
+    background-color: #f8a40b;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
-.section {
-    background-color: #4caf50; /* Verde */
+.hidden-content {
+    display: none;
+    background-color: #333;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.image-grid img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.section.reverse {
-    flex-direction: row-reverse;
+/* Estilos responsivos */
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .content img {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    .text {
+        text-align: left;
+        margin-top: 0;
+    }
 }
-@media (max-width: 768px) {
+
+@media (min-width: 1024px) {
     .section {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
+        padding: 30px;
     }
-    .section .text {
-        position: static;
-        width: 100%;
-        background-color: transparent;
-        color: #fff;
-        padding: 20px 10px;
-        border-radius: 8px 8px 0 0;
+    .content img {
+        max-width: 200px;
     }
-    .section img {
-        max-width: 100%;
-        margin: 0 auto;
-        border-radius: 0 0 8px 8px; /* Bordes redondeados solo en la parte inferior */
+    .text {
+        max-width: 800px;
+    }
+    .button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+/* Estilo para la cuadrícula de imágenes en hidden-content */
+@media (min-width: 768px) {
+    .image-grid img {
+        max-width: 48%;
+    }
+}
+@media (min-width: 1024px) {
+    .image-grid img {
+        max-width: 23%;
     }
 }
   /* preparacion */

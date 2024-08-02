@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secciones con Despliegue</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .section {
+            padding: 20px;
+            position: relative;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #222;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .content img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .text {
+            text-align: center;
+            margin-top: 20px;
+            max-width: 600px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .button {
+            margin-top: 10px;
+            background-color: #f8a40b;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .hidden-content {
+            display: none;
+            background-color: #333;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .image-grid img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos responsivos */
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .content img {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            .text {
+                text-align: left;
+                margin-top: 0;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .section {
+                padding: 30px;
+            }
+            .content img {
+                max-width: 200px;
+            }
+            .text {
+                max-width: 800px;
+            }
+            .button {
+                font-size: 18px;
+                padding: 12px 24px;
+            }
+        }
+
+        /* Estilo para la cuadrícula de imágenes en hidden-content */
+        @media (min-width: 768px) {
+            .image-grid img {
+                max-width: 48%;
+            }
+        }
+        @media (min-width: 1024px) {
+            .image-grid img {
+                max-width: 23%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="content">
+            <img src="path/to/image1.jpg" alt="Image 1">
+            <div class="text">
+                <div class="title">Where It All Began</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                <button class="button" onclick="toggleContent('content1')">Show More</button>
+            </div>
+        </div>
+        <div id="content1" class="hidden-content">
+            <div class="image-grid">
+                <img src="path/to/expanded-image1a.jpg" alt="Expanded Image 1a">
+                <img src="path/to/expanded-image1b.jpg" alt="Expanded Image 1b">
+                <img src="path/to/expanded-image1c.jpg" alt="Expanded Image 1c">
+                <img src="path/to/expanded-image1d.jpg" alt="Expanded Image 1d">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <img src="path/to/image2.jpg" alt="Image 2">
+            <div class="text">
+                <div class="title">A Tattooed Life</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                <button class="button" onclick="toggleContent('content2')">Show More</button>
+            </div>
+        </div>
+        <div id="content2" class="hidden-content">
+            <div class="image-grid">
+                <img src="path/to/expanded-image2a.jpg" alt="Expanded Image 2a">
+                <img src="path/to/expanded-image2b.jpg" alt="Expanded Image 2b">
+                <img src="path/to/expanded-image2c.jpg" alt="Expanded Image 2c">
+                <img src="path/to/expanded-image2d.jpg" alt="Expanded Image 2d">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <img src="path/to/image3.jpg" alt="Image 3">
+            <div class="text">
+                <div class="title">Art & Culture</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                <button class="button" onclick="toggleContent('content3')">Show More</button>
+            </div>
+        </div>
+        <div id="content3" class="hidden-content">
+            <div class="image-grid">
+                <img src="img/actividad2.jpeg" alt="Expanded Image 3a">
+                <img src="img/actividad2.jpeg" alt="Expanded Image 3b">
+                <img src="img/actividad2.jpeg" alt="Expanded Image 3c">
+                <img src="img/actividad2.jpeg" alt="Expanded Image 3d">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
