@@ -41,6 +41,44 @@
                     Reviviendo la Naturaleza: Reconexión, Inspiración y Armonía en Cada Proyección
                 </div>
             </div>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slide"><img src="img/carousel/PORT1.webp" alt="Imagen 1"></div>
+                    <div class="slide"><img src="img/carousel/PORT2.webp" alt="Imagen 2"></div>
+                    <div class="slide"><img src="img/carousel/PORT3.webp" alt="Imagen 3"></div>
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            
+            <script>
+                let currentSlide = 0;
+                const slides = document.querySelectorAll('.carousel .slide');
+                const totalSlides = slides.length;
+            
+                function showSlide(index) {
+                    slides.forEach((slide, i) => {
+                        slide.style.display = (i === index) ? 'block' : 'none';
+                    });
+                }
+            
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    showSlide(currentSlide);
+                }
+            
+                function prevSlide() {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    showSlide(currentSlide);
+                }
+            
+                // Cambiar de imagen automáticamente cada 5 segundos
+                setInterval(nextSlide, 7000);
+            
+                // Mostrar la primera imagen
+                showSlide(currentSlide);
+            </script>
         </div>
         <!-- invitacion -->
 
@@ -101,47 +139,47 @@
     </div>
     <div class="calendar-container">
         <a href="/actividades/act1.html">
-        <div class="card" onclick="location.href='act1.html'">
-            <img src="img/actividad1.jpeg" alt="INAGURACION">
-            <div class="card-content">
-                <p class="activity">Hora: 2:00 p.m.</p>
-                <h3>TALLERES DE TEJIDO COLECTIVO</h3>
-                <p class="date"> jueves 8 de agosto de 2024</p>
+            <div class="card" onclick="location.href='act1.html'">
+                <img src="img/actividad1.jpeg" alt="INAGURACION">
+                <div class="card-content">
+                    <h5 class="fin">FINALIZADO</h5>
+                    <h3>TALLERES DE TEJIDO COLECTIVO</h3>
+                    <p class="date">jueves 8 de agosto de 2024</p>
+                </div>
             </div>
-        </div>
         </a>
         <a href="/actividades/act3.html">
             <div class="card" onclick="location.href='page3.html'">
                 <img src="img/actividad3.jpeg" alt="Pachama releases Project Evaluation Criteria 2.3">
                 <div class="card-content">
-                    <p class="activity">Hora: 2:00 p.m - 7:00 p.m.</p>
+                    <h5 class="fin">FINALIZADO</h5>
                     <h3>COLOQUIO ARMONÍAS</h3>
                     <p class="date">jueves 9 de agosto de 2024</p>
                 </div>
             </div>
         </a>
         <a href="/actividades/act2.html">
-        <div class="card" onclick="location.href='page2.html'">
-            <img src="img/actividad2.jpeg" alt="Why mangroves: The case for blue carbon">
-            <div class="card-content">
-                <p class="activity">Hora: 2:00 p.m.</p>
-                <h3>TALLERES DE TEJIDO COLECTIVO</h3>
-                <p class="date">segundo encuentro</p>
-                <p class="date"> jueves 15 de agosto de 2024</p>
+            <div class="card" onclick="location.href='page2.html'">
+                <img src="img/actividad2.jpeg" alt="Why mangroves: The case for blue carbon">
+                <div class="card-content">
+                    <h5 class="fin">FINALIZADO</h5>
+                    <h3>TALLERES DE TEJIDO COLECTIVO</h3>
+                    <p class="date">segundo encuentro</p>
+                    <p class="date">jueves 15 de agosto de 2024</p>
+                </div>
             </div>
-        </div>
-    </a>
-    
-    <a href="/actividades/act4.html">
-        <div class="card" onclick="location.href='page4.html'">
-            <img src="img/actividad4.jpeg" alt="Customer success story: Workday">
-            <div class="card-content">
-                <p class="activity">Hora: 2:00 p.m.</p>
-                <h3>TALLER DE PIGMENTOS NATURALES</h3>
-                <p class="date">jueves 22 de agosto de 2024</p>
+        </a>
+        <a href="/actividades/act4.html">
+            <div class="card" onclick="location.href='page4.html'">
+                <img src="img/actividad4.jpeg" alt="Customer success story: Workday">
+                <div class="card-content">
+                    <h5 class="fin">FINALIZADO</h5>
+                    <h3>TALLER DE PIGMENTOS NATURALES</h3>
+                    <p class="date">jueves 22 de agosto de 2024</p>
+                </div>
             </div>
-        </div>
-    </a>
+        </a>
+    </div>
     
     </div>
 </div>
@@ -152,7 +190,7 @@
         <div class="container" id="cards">
             <div class="section card2">
                 <p class="sub">NUESTRAS ACTIVIDADES</p>
-                <h1 class="titulo">NUESTRAS ACTIVIDADES</h1>
+                <h1 class="titulo">ACTIVIDADES PREVIAS</h1>
                 <p class="description"></p>
                 <a href="/sections/actividades.html"><button onclick="location.href='actividades.html'" class="cardbtn">DESCUBRE MÁS</button></a>
             </div>
@@ -169,7 +207,7 @@
         <footer>
             <div class="footer-content">
                 <h1>Conecta con tu entorno natural</h1>
-                <button>ÚNETE A NOSOTROS</button>
+                
             </div>
             <div class="footer-border"></div>
         </footer>
